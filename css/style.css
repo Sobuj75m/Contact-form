@@ -1,0 +1,203 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../image/oppenheimer-oppenheimer-movie.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+
+/*=================== Coding Start ===============*/
+
+
+.menu-bar{
+  height: 100px;
+  width: 100%;
+  background: transparent;
+}
+
+.menu-bar .flex-column{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-bar .left-column{
+  width: 50%;
+}
+
+.menu-bar .left-column a{
+  text-decoration: none;
+}
+
+.menu-bar h2{
+  color: #fff;
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 100px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu-bar .right-column{
+  width: 50%;
+}
+
+.menu-bar ul{
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar li{
+  list-style: none;
+  display: inline-block;
+}
+
+.menu-bar .right-column a{
+  font-size: 17px;
+  color: #fff;
+  margin-left: 20px;
+  line-height: 100px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.menu-bar a:hover{
+  color: rgb(120, 124, 124);
+}
+
+
+/*================== Menu-bar End ====================*/
+
+
+
+/*================== contact-form start ====================*/
+
+.contact-form .box {
+	width: 700px;
+	height: auto;
+	background: transparent;
+	margin: 35px auto;
+	padding: 35px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	padding-bottom: 50px;
+}
+
+.contact-form h1 {
+	margin: 0;
+	margin-bottom: 40px;
+	color: #fff;
+	text-align: center;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.contact-form .flex-div{
+  display: flex;
+}
+
+.contact-form .text2{
+  margin-left: 10px;
+}
+
+.contact-form .text2:first-child{
+  margin-left: 0;
+}
+
+.contact-form input, textarea {
+	width: 97.8%;
+	margin-bottom: 10px;
+	height: 35px;
+	padding-left: 10px;
+  border: none;
+  transition: .5s;
+  
+}
+
+.contact-form input:hover{
+  box-shadow: 0 0 10px #fff;
+}
+
+
+::placeholder{
+  color: #000;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+::placeholder:hover{
+  color: #fff;
+}
+
+.contact-form textarea {
+	height: 160px;
+	overflow: scroll;
+	resize: none;
+  border: none;
+  padding-top: 10px;
+}
+
+.contact-form textarea:hover{
+  box-shadow: 0 0 10px #fff;
+}
+
+.contact-form button {
+	width: 25%;
+	height: 42px;
+	border: none;
+	text-transform: capitalize;
+	font-weight: 800;
+}
+
+.contact-form button:hover {
+  background-color: rgb(158, 158, 158);
+  box-shadow: 0 0 10px #fff;
+}
+
+
+/*================== contact-form end ==================*/
+
+
+/*================== responsive design ===================*/
+
+
+@media only screen and (max-width: 989px){
+  .contact-form h1 {
+    margin-bottom: 38px;
+  }
+  .contact-form .box {
+    width: 70%;
+    height: auto;
+    padding-bottom: 55px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .contact-form .flex-div {
+    display: unset;
+  }
+  .contact-form .text2 {
+    margin-left: 0px;
+  }
+  .contact-form button {
+    width: 150px;
+  }
+  .contact-form h1 {
+    font-size: 35px;
+  }
+}
